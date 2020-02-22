@@ -1,13 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 #app {
-    background-image: url(../images/backgoud_img.jpg);
-    background-size: 1440px 900px;
+    display: flex;
     background-repeat: no-repeat;
-    padding: 12px;
-    width: 100%;
+}
+
+.image {
+    background-image: url(../images/backgoud_school.jpg);
+    display: flex;
+    flex: 2;
+    width: 100vw;
+    height: 100vh;
+}
+
+.form-sign {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    flex-direction: column;
 }
 
 #app p {
     text-align: center;
+    margin-bottom: 50px;
 }
 
 #app h1 {
@@ -15,12 +34,9 @@
     line-height: 38px;
     text-transform: capitalize;
     color: #4F4F4F;
-    margin-bottom: 8px;
-    margin-left: 990px;
 }
 
 #app p {
-    margin-top: 8px;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -28,55 +44,49 @@
     color: #828282;
 }
 
-#signup-form {
-    width: 400px;
-    height: 490px;
+#signup-form,
+#signin-form {
     background: #FFFFFF;
     box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.16);
     border-radius: 16px;
-    padding: 40px 5px;
-    margin-left: 880px;
+    padding: 15px;
+    width: 100%;
 }
 
-.signup {
+.signin {
     display: flex;
     justify-content: left;
     align-items: flex-end;
 }
 
+.signup {
+    display: flex;
+    justify-content: center;
+    padding: 24px;
+}
+
 input {
-    width: 346px;
-    height: 37px;
     background: #FFFFFF;
     border: 1px solid #E0E0E0;
     box-sizing: border-box;
     border-radius: 4px;
-    padding: 16px;
-    margin-top: 11px;
-    margin-bottom: 24px;
-}
-
-.input-group input,
-.input-group label {
-    margin-left: 40px;
 }
 
 #button {
-    margin-left: 40px;
     width: 346px;
     height: 56px;
     background: #35CE97;
     border: 1px solid #35CE97;
     box-sizing: border-box;
     border-radius: 88px;
-    font-family: 'Lato';
     font-size: 20px;
     line-height: 24px;
     text-align: center;
     text-transform: capitalize;
     color: #F2F2F2;
+    align-items: center;
 }
 
-html {
-    overflow-x: hidden;
+.error {
+    color: red;
 }
